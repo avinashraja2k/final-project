@@ -1,0 +1,71 @@
+<!-- <div *ngIf="mov == 1">
+<h1>Sita Ramam</h1>
+
+</div> -->
+
+<!-- <div [ngSwitch]="mov"></div>
+<div *ngSwitchCase="1">Sita Ramam</div>
+<div *ngSwitchCase="2">Brahmastra</div>
+<div *ngSwitchCase="3">Sinam</div>
+<div *ngSwitchCase="4">Thiruchitrambalam</div>
+<div *ngSwitchCase="5">Diary</div>
+<div *ngSwitchCase="6">Cobra</div>
+<div *ngSwitchCase="7">Cobra</div>
+<div *ngSwitchCase="8">Vendhu Thaninthathu Kadu</div>
+<div *ngSwitchCase="9">Kanam</div> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+      background-color: black;
+      height:119%;
+      text-align: center;
+      color:white;
+    }
+    img{
+      width:100%;
+    }
+    #timings{
+      position: relative;
+      bottom: -40px;
+      display:block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    button{
+      background-color: gold;
+      margin-left:50px;
+      margin-right:50px;
+      height:50px;
+      width:120px;
+    }
+    button:hover{
+      border:6px solid green
+    }
+    a{
+      text-decoration: none;
+      color: black;
+    }
+  </style>
+</head>
+<body>
+  <div id="aldiv">
+    <h1>SHOW TIMES</h1>
+<img src={{mov.mimg}}>
+<h1>{{ mov.mname }} <br />{{ mov.mlang }} | {{ mov.mrating }} |
+              {{ mov.mgenre }}</h1>
+</div>
+<div id="timings">
+  <button><a routerLink="/seats">09:00 am</a></button>
+  <button><a routerLink="/seats">01:00 pm</a></button>
+  <button><a routerLink="/seats">06:00 pm</a></button>
+</div>
+</body>
+</html>
+
+

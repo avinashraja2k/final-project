@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+     #cont{
+      position: relative;
+      top: 70px;
+      display: grid;
+      grid-template-columns: repeat(5,20%);
+      grid-template-rows: repeat(5,20%);
+      row-gap: 10px;
+      column-gap:-200px;
+      padding: 20px;
+      height:max-content;
+      width:100%;
+
+    }
+    .seat{
+      background-color: green;
+      border-radius: 15px;
+      border: 4px solid grey;
+      height:100px;
+      width:100px;
+      margin-left: 70px;
+      transition: 0.3s ease-in-out;
+    }
+    .seat:hover{
+      transition: 0.3s ease-in-out;
+      transform: scale(1.2);
+      background-color: yellow;
+    }
+
+    body{
+      background-color: black;
+      height: 142%;
+    }
+    h1{
+      color:white;
+      text-align: center;
+    }
+    #book{
+      /* display: block;
+      margin-left: auto;
+      margin-right: auto; */
+      height:50px;
+      width:200px;
+      background-color: gold;
+      position: relative;
+      bottom:-140px;
+      left:42%;
+    }
+    #book:hover{
+      border:6px solid green;
+    }
+  </style>
+</head>
+<body>
+  <h1>SEAT SELECTION</h1>
+<div id="cont">
+  <button class="seat" id="s1" [style]="color[0]" [disabled]="disvar[0]" (click)="book1()"></button>
+  <button class="seat" id="s2" [style]="color[1]" [disabled]="disvar[1]" (click)="book2()"></button>
+  <button class="seat" id="s3" [style]="color[2]" [disabled]="disvar[2]" (click)="book3()"></button>
+  <button class="seat" id="s4" [style]="color[3]" [disabled]="disvar[3]" (click)="book4()"></button>
+  <button class="seat" id="s5" [style]="color[4]" [disabled]="disvar[4]" (click)="book5()"></button>
+  <button class="seat" id="s6" [style]="color[5]" [disabled]="disvar[5]" (click)="book6()"></button>
+  <button class="seat" id="s7" [style]="color[6]" [disabled]="disvar[6]" (click)="book7()"></button>
+  <button class="seat" id="s8" [style]="color[7]" [disabled]="disvar[7]" (click)="book8()"></button>
+  <button class="seat" id="s9" [style]="color[8]" [disabled]="disvar[8]" (click)="book9()"></button>
+  <button class="seat" id="s10" [style]="color[9]" [disabled]="disvar[9]" (click)="book10()"></button>
+  <button class="seat" id="s11" [style]="color[10]" [disabled]="disvar[10]" (click)="book11()"></button>
+  <button class="seat" id="s12" [style]="color[11]" [disabled]="disvar[11]" (click)="book12()"></button>
+  <button class="seat" id="s13" [style]="color[12]" [disabled]="disvar[12]" (click)="book13()"></button>
+  <button class="seat" id="s14" [style]="color[13]" [disabled]="disvar[13]" (click)="book14()"></button>
+  <button class="seat" id="s15" [style]="color[14]" [disabled]="disvar[14]" (click)="book15()"></button>
+  <button class="seat" id="s16" [style]="color[15]" [disabled]="disvar[15]" (click)="book16()"></button>
+  <button class="seat" id="s17" [style]="color[16]" [disabled]="disvar[16]" (click)="book17()"></button>
+  <button class="seat" id="s18" [style]="color[17]" [disabled]="disvar[17]" (click)="book18()"></button>
+  <button class="seat" id="s19" [style]="color[18]" [disabled]="disvar[18]" (click)="book19()"></button>
+  <button class="seat" id="s20" [style]="color[19]" [disabled]="disvar[19]" (click)="book20()"></button>
+  <button class="seat" id="s21" [style]="color[20]" [disabled]="disvar[20]" (click)="book21()"></button>
+  <button class="seat" id="s22" [style]="color[21]" [disabled]="disvar[21]" (click)="book22()"></button>
+  <button class="seat" id="s23" [style]="color[22]" [disabled]="disvar[22]" (click)="book23()"></button>
+  <button class="seat" id="s24" [style]="color[23]" [disabled]="disvar[23]" (click)="book24()"></button>
+  <button class="seat" id="s25" [style]="color[24]" [disabled]="disvar[24]" (click)="book25()"></button>
+</div>
+<button id="book" (click)="block()">Book</button>
+</body>
+</html>
